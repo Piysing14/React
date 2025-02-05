@@ -1,10 +1,12 @@
-
+# Reduce the influence of HTML, CSS, and plain JavaScript
 *.html linguist-detectable=false
 *.css linguist-detectable=false
-
-
 *.js linguist-detectable=false
 
-
+# Prioritize JSX and TSX for React recognition
 *.jsx linguist-detectable=true
+*.tsx linguist-detectable=true
 
+# Force GitHub to classify as JSX instead of plain JavaScript
+*.jsx linguist-language=JavaScript
+*.tsx linguist-language=TypeScript
