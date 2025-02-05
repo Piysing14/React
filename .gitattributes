@@ -2,4 +2,3 @@
 *.css linguist-detectable=false
 *.js linguist-detectable=false
 *.jsx linguist-detectable=true
-*.tsx linguist-detectable=true
