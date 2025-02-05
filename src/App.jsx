@@ -1,21 +1,25 @@
-import Counter from '../Counter';
-import './App.css'
-import Parent from './Parent';
+import "./App.css";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Start from "./components/Start";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 function App() {
- let data="This is a parent prop"
-
-
   return (
-  <>
-<h1>This is App h1</h1>
-<Parent data={data}/>
-<Counter/>
-
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Start/>} />
+          <Route path="Home" element={<Home/>} />
+          <Route path="About" element={<About/>} />
+          <Route path="Contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  );
-
+  ); 
 }
 
-export default App
+export default App;
